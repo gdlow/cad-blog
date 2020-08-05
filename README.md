@@ -1,4 +1,4 @@
-### React/ Next.js portfolio/ blog template for aesthetically keen engineers
+### React/ Next.js portfolio/ blog template for aesthetically keen design engineers
 
 ## Inspiration
 Create a useful, no-bloat website template for design engineers to upload 3D CAD models and write blog posts about them.
