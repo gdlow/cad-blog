@@ -1,6 +1,6 @@
 ---
-title: Two Forms Of Pre-rendering
-date: 2020-01-01
+title: Pre-rendering In Next.js
+date: 2020-01-04
 author: Gerald Low
 ---
 

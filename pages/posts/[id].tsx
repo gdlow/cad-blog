@@ -7,25 +7,25 @@ import { getAllPostIds, getMarkdownData, MarkdownData } from "../../utils/getMar
 import { GetStaticProps, GetStaticPaths } from "next"; 
 
 import "../../styles/utils.css";
-import "../../styles/blog.css";
+import "../../styles/posts.css";
 
 const Post: FC<MarkdownData> = ({ postData }) => {
   return (
   		<React.Fragment>
-  			<div className="blog-postContainer">
+  			<div className="posts-container">
 		  		<Head>
 		  			<title>{postData.meta.title}</title>
 		  		</Head>
 		  		<article>
-			  		<h1 className="utilStyles-blogHeadingXl" id="blog-postTitle">{postData.meta.title}</h1>
-			  		<div className="utilStyles-blogLightText" id="blog-postDate">
+			  		<h1 className="utils-blogHeadingXl" id="posts-title">{postData.meta.title}</h1>
+			  		<div className="utils-blogLightText" id="posts-date">
 			  			<Date dateString={postData.meta.date} />
 			  		</div>
-			  		<div className="utilStyles-blogText" dangerouslySetInnerHTML={{ __html: postData.content }} />
+			  		<div className="utils-blogText" dangerouslySetInnerHTML={{ __html: postData.content }} />
 		  		</article>
-		  		<div className="utilStyles-backToHome">
-          <Link href="/">
-            <a className="utilStyles-undecorated">← Back to home</a>
+		  		<div className="utils-backToHome">
+          <Link href="/blog">
+            <a className="utils-undecorated">← Back to home</a>
           </Link>
         </div>
 		  	</div>

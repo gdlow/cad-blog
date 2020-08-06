@@ -1,4 +1,4 @@
-.utilStyles-heading2Xl {
+.utils-heading2Xl {
   font-size: 3.5rem;
   line-height: 1.2;
   font-weight: 800;
@@ -6,7 +6,7 @@
   margin: 1rem 0;
 }
 
-.utilStyles-headingXl {
+.utils-headingXl {
   font-size: 2rem;
   line-height: 1.3;
   font-weight: 800;
@@ -14,44 +14,44 @@
   margin: 1rem 0;
 }
 
-.utilStyles-headingLg {
+.utils-headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
 }
 
-.utilStyles-headingMd {
+.utils-headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
-.utilStyles-borderCircle {
+.utils-borderCircle {
   border-radius: 9999px;
 }
 
-.utilStyles-colorInherit {
+.utils-colorInherit {
   color: inherit;
 }
 
-.utilStyles-padding1px {
+.utils-padding1px {
   padding-top: 1px;
 }
 
-.utilStyles-list {
+.utils-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.utilStyles-listItem {
+.utils-listItem {
   margin: 0 0 1.25rem;
 }
 
-.utilStyles-lightText {
+.utils-lightText {
   color: #999;
 }
 
-.utilStyles-blogHeadingXl {
+.utils-blogHeadingXl {
   font-size: 3.4rem;
   line-height: 1.3;
   font-weight: 800;
@@ -59,25 +59,25 @@
   margin: 1rem 0;
 }
 
-.utilStyles-blogLightText {
+.utils-blogLightText {
   color: #999;
   font-size: 1.5rem;
 }
 
-.utilStyles-blogText {
+.utils-blogText {
   font-size: 1.75rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.utilStyles-backToHome {
+.utils-backToHome {
   margin: 3rem 0 0;
 }
 
-a.utilStyles-undecorated {
+a.utils-undecorated {
   text-decoration: inherit;
 }
 
-a.utilStyles-undecorated:hover {
+a.utils-undecorated:hover {
   color: #0fa0ce;
 }

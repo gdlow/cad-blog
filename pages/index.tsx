@@ -14,7 +14,7 @@ const Index: FC<{}> = () => {
       <div className="index-container">
         <img
           src="/images/profile.jpg"
-          className="index-headerHomeImage utilStyles-borderCircle"
+          className="index-headerHomeImage utils-borderCircle"
           alt="Gerald Low"
         />
         <MDContent

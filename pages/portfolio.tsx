@@ -20,7 +20,7 @@ const App: FC<{}> = () => {
       </Head>
       <div className="portfolio-container">
         <STLViewer
-          className="portfolio-stlViewer"
+          className="portfolio-stl-viewer"
           model={chosenDesign.stl_url}
           height={330}
           width={380}
@@ -29,7 +29,7 @@ const App: FC<{}> = () => {
           rotate={false}
           orbitControls={true}
         />
-        <div className="portfolio-innerContainer">    
+        <div className="portfolio-inner-container">    
           <DescriptionCard />
           <SelectedListItem />
         </div>

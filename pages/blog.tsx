@@ -9,6 +9,7 @@ import "../styles/blog.css";
 import "../styles/utils.css";
 
 const Blog: FC<MarkdownData> = ({ allPostsData }) => {
+  const maxLen = 5;
   return (
     <React.Fragment>
       <Head>
@@ -21,14 +22,14 @@ const Blog: FC<MarkdownData> = ({ allPostsData }) => {
           id="blog-welcome"
           filepath="blog.md"
         />
-        <ul className="utilStyles-list">
-          {allPostsData.map(({ meta, content }) => (
-            <li className="utilStyles-listItem" key={meta.id}>
+        <ul className="utils-list">
+          {allPostsData.slice(0, maxLen).map(({ meta, content }) => (
+            <li className="utils-listItem" key={meta.id}>
               <Link href="/posts/[id]" as={`/posts/${meta.id}`}>
-                <a className="utilStyles-undecorated">{meta.title}</a>
+                <a className="utils-undecorated">{meta.title}</a>
               </Link>
               <br />
-              <small className="utilStyles-lightText">
+              <small className="utils-lightText">
                 <Date dateString={meta.date} />
               </small>
             </li>

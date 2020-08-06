@@ -19,6 +19,13 @@ img {
   max-width: 1080px;
 }
 
+@media (min-width: 400px) {
+  .container {
+    width: 80%;
+    padding: 0 0 8px 0;
+  }
+}
+
 #wrapper {
   min-height: 100vh;
 }
@@ -61,7 +68,7 @@ img {
 
 #navbar-menu-trigger-wrapper {
   float: right;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 #navbar-menu-trigger-wrapper > label {
@@ -119,32 +126,6 @@ div.navbar-link {
   div.navbar-link {
     margin-left: 2rem;
     font-size: 2rem;
-  }
-}
-
-#footer {
-  position: relative;
-  margin-top: 0;
-  color: #888;
-  padding: 1rem 0;
-}
-
-#language-switch-wrapper {
-  text-align: center;
-}
-
-#language-switch-wrapper a {
-  cursor: pointer;
-}
-
-#language-switch-wrapper .selected {
-  font-weight: 500;
-  color: #222;
-}
-
-@media (min-width: 750px) {
-  #language-switch-wrapper {
-    text-align: right;
   }
 }
 

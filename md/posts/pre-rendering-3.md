@@ -1,6 +1,6 @@
 ---
-title: Two Forms Of Pre-rendering
-date: 2020-01-01
+title: The Different Forms Of Pre-rendering
+date: 2020-01-06
 author: Gerald Low
 ---
 

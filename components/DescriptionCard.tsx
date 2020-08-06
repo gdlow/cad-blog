@@ -4,7 +4,7 @@ import { stlContext } from "./STLContextProvider";
 import designs, { Design } from "../utils/designs/designs";
 import Popover from "./Popover";
 
-import "../styles/portfolio.css";
+import "../styles/card.css";
 
 const DescriptionCard: FC<{}> = () => {
   const { current, setCurrent } = useContext(stlContext);
@@ -22,12 +22,12 @@ const DescriptionCard: FC<{}> = () => {
       }}
     >
       <CardContent>
-        <h2 className="portfolio-cardTitle">{chosenDesign.title}</h2>
-        <p className="portfolio-cardCaption">{chosenDesign.created_date}</p>
-        <p className="portfolio-cardParagraph">{chosenDesign.description}</p>
+        <h2 className="card-title">{chosenDesign.title}</h2>
+        <p className="card-caption">{chosenDesign.created_date}</p>
+        <p className="card-paragraph">{chosenDesign.description}</p>
       </CardContent>
-      <CardActions className="portfolio-cardAction">
-        <div className="portfolio-cardBottomContainer">
+      <CardActions className="card-action">
+        <div className="card-bottom-container">
           <Popover />
           <Button>Design Doc</Button>
         </div>

@@ -1,0 +1,13 @@
+.posts-container {
+  max-width: 56rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+#posts-title {
+  padding: 1rem 0 0 0;  
+}
+
+#posts-date {
+  padding: 0 0 1.75rem 0;
+}

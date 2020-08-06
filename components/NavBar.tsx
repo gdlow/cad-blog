@@ -1,12 +1,12 @@
 import Link from "next/link";
-import FC from "react";
+import { FC, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHippo } from "@fortawesome/free-solid-svg-icons";
+import { faHippo, faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-const items: { href: string, name: string }[] = [
-{
+const items: { href: string; name: string }[] = [
+	{
 		href: "/portfolio",
 		name: "portfolio",
 	},
@@ -21,12 +21,17 @@ const items: { href: string, name: string }[] = [
 ];
 
 const NavBar: FC<{}> = () => {
+	const [isNavBarMenuVisible, setNavBarMenuVisible] = useState(false);
+	const onNavBarMenuTriggerChange = ({ target: { checked } }) => {
+		setNavBarMenuVisible(checked);
+	};
+
 	return (
 		<div id="navbar">
 			<div className="container">
 				<Link href="/">
 					<div id="website-title">
-						<FontAwesomeIcon icon={faHippo} size="xs"/>
+						<FontAwesomeIcon icon={faHippo}  />
 					</div>
 				</Link>
 				<div id="navbar-links-container">
@@ -38,7 +43,38 @@ const NavBar: FC<{}> = () => {
 						</div>
 					))}
 				</div>
+				<div id="navbar-menu-trigger-wrapper">
+					<input
+						id="navbar-menu-trigger"
+						type="checkbox"
+						onChange={onNavBarMenuTriggerChange}
+					/>
+						<label htmlFor="navbar-menu-trigger">
+							<FontAwesomeIcon
+								style={isNavBarMenuVisible ? { display: "none" } : {}}
+								icon={faBars}
+								size="xs"
+							/>
+							<FontAwesomeIcon
+								style={isNavBarMenuVisible ? {} : { display: "none" }}
+								icon={faTimes}
+								size="xs"
+							/>
+						</label>
+				</div>
 			</div>
+			<ul
+			className="navbar-menu"
+			style={isNavBarMenuVisible ? {} : { display:"none" }}
+			>
+				{items.map(({href, name}) => (
+					<li className="navbar-menu-item" key={href}>
+						<Link href={href}>
+							<a className="undecorated">{name}</a>
+						</Link>			
+					</li>
+					))}
+			</ul>
 		</div>
 	);
 };
